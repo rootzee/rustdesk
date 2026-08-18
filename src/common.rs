@@ -1003,19 +1003,16 @@ pub async fn do_check_software_update() -> hbb_common::ResultType<()> {
 
 #[inline]
 pub fn get_app_name() -> String {
-    hbb_common::config::APP_NAME.read().unwrap().clone()
+    "Zulu's Web Desk".to_owned()
 }
-
 #[inline]
 pub fn is_rustdesk() -> bool {
-    hbb_common::config::APP_NAME.read().unwrap().eq("RustDesk")
+    false
 }
-
 #[inline]
 pub fn get_uri_prefix() -> String {
-    format!("{}://", get_app_name().to_lowercase())
+    "zuluswebdesk://".to_owned()
 }
-
 #[cfg(target_os = "macos")]
 pub fn get_full_name() -> String {
     format!(
