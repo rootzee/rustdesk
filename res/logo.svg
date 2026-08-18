@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#111111">
+    <!-- top bar -->
+    <rect x="100" y="100" width="312" height="80"/>
+    <!-- bottom bar -->
+    <rect x="100" y="332" width="312" height="80"/>
+    <!-- diagonal stroke connecting top-right to bottom-left -->
+    <polygon points="412,180 310,180 100,332 202,332"/>
+  </g>
+</svg>
